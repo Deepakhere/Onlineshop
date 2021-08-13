@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <title>Cart page</title>
+<style>
+     nav {     
+        list-style-type: none;
+        margin: 0;
+        background: black;
+        overflow: auto;
+       }
+    
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    }
+     
+    li a {
+        display: block;
+        color: #666;
+        padding: 0px 8px ;
+        text-decoration: none;
+        float: right;
+        font-size: 17px;
+    }
+    
+    li a:hover {
+    color: green;
+    }
+          <!--cart page----- -->
+          @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+
+.cart-page{
+        margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    
+    text-align: left;
+    padding: 8px;
+    color:#fff;
+    background-color: #ff523b;
+    font-weight: bold;
+}
+tr{
+padding:0;
+margin: 0;
+}
+td{
+    padding: 12px 3px;    
+}
+td input{
+    width: 60px;
+    height:30px;
+    padding: 3px;
+}
+.btn1{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(29, 106, 194);
+    color: white;
+    border-radius:4px;
+    font-weight: bold;
+    float:right;
+}
+.btn1:hover{
+    background-color:black;
+    border: 1px solid;
+     color: green;
+}
+footer{
+    padding: 3px 0px 1px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.938);
+    color: white;
+    }
+
+    .container .row .panel-success .panel-heading{
+        background-color: rgb(88, 218, 88);
+    }
+    .container .row .panel-alert .panel-heading{
+        background-color: rgb(218, 129, 88);
+    }
+    .container .row .panel-primary .panel-heading{
+        background-color: rgb(88, 144, 218);
+    }
+    .container .row .panel-default .panel-heading{
+        background-color: rgb(173, 173, 173);
+    }
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    </head>
+<body>
+    <!---------Navigation bar----------->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Lifestyle Store</a>
+            </div>
+            <div>
+                <ul class="navbar navbar-inverse navbar-fixed-top">
+                    <li><a href="file:///D:/assign%202/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+                    <li><a href="file:///D:/assign%202/login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a></li>
+                    <li><a href="file:///D:/assign%202/signup.html"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><br/>
+<!------cart item------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Item No:</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="number" value="0"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Total</td>
+            <td>Rs 0/-</td>
+            <td><button type="button" class="btn1 btn-primary mt-3 mb-3"><a herf="#">Confirm Order</a></button></td>
+        </tr>
+    </table>
+
+   <!--<div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Rs 0/-</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs 0/-</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Rs 0/-</td>
+            </tr>
+        </table>
+    </div>-->
+
+
+    <br/><br/>
+    <div class="container">
+        <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well">
+                <h2>Dashboard</h2>
+            </div >
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <center><i class="fa fa-shopping-cart" aria-hidden="true"></i></center>
+                        <center><h6>Shopping Cart</h6></center>   
+                        <div class="panel-footer">
+                                <a href="#">View Deatils</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-alert">
+                    <div class="panel-heading">
+                       <center><i class="fa fa-shopping-bag" aria-hidden="true"></i></center>
+                       <center><h6>Shopping Bag</h6></center> 
+                        <div class="panel-footer">
+                                <a href="#">View Deatils</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                            <center><i class="fa fa-cc-visa" aria-hidden="true"></i></center>
+                       <center><h6>Payment</h6></center>  
+                        <div class="panel-footer">
+                                <a href="#">View Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-md-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                            <center><i class="fa fa-paypal" aria-hidden="true"></i></center>
+                            <center><h6>Payment</h6></center>
+                        <div class="panel-footer">
+                                <a href="#">View Deatils</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </div>
+    </div>
+    <br/><br/>
+    <footer>
+        <p>Copyright © Lifestyle Store. All Rights  Reserved” ​and ​“Contact Us: +91 90000 00000</p>
+     </footer>
+</div>
+</body>
+</html>
